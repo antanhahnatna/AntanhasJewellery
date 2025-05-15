@@ -1,20 +1,9 @@
-## Disclaimer
-- This script was made in 2 hours live, there are probably bugs.
+### Antanha's jewellery
 
-### BotWithUs Woodcutter tutorial
-We made this project together on our Zero to Hero scripter session:
-- https://youtube.com/live/jdNKI84m1HQ?feature=share 
+Makes anything from silver or gold bars at a furnace. The needed items other than the bars come from your bank, and they're withdrawn via load last preset.
 
-### Description
-- Barebones willow chopper with woodbox support
+### Instructions
 
-### Info
-- You'll find the script itself located at ``src/main/java/net/botwithus/SkeletonScript.java``
-- You'll find the graphics context (which allows you to draw UI with ImGui) at ``src/main/java/net/botwithus/SkeletonScriptGraphicsContext.java``
-- If you're having any trouble, speak up in the public-scripters channel on discord!
+This script assumes all your gold bars are in the metal bank.
 
-### After downloading/copying
-- You should change your project name in ``settings.gradle.kts``
-- You should make sure gradle is configured with JDK 20 (OpenJDK or Corretto) ``File > Settings > Build, Execution, Deployment > Build Tools > Gradle``
-- Rename the script and graphics context to something appropriate.
-- Update script.ini to relevant info
+Set your last bank preset according to what you want to craft (e.g. 28 rubies), then start the script in Fort Forinthry or Artisan's Workshop.
