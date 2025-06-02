@@ -181,6 +181,8 @@ public class AntanhasJewellery extends LoopingScript {
             }
         });
 
+        loadConfiguration();
+
         return true;
     }
 
@@ -319,6 +321,25 @@ public class AntanhasJewellery extends LoopingScript {
         long seconds = TimeUnit.MILLISECONDS.toSeconds(elapsedTime) % 60;
 
         return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+    }
+
+    void saveConfiguration() {
+        try {
+            configuration.addProperty("jewelToSmelt", String.valueOf(jewelToSmelt.ordinal()));
+            configuration.save();
+        } catch (Exception e) {
+            println("Error saving configuration");
+            println("This is a non-fatal error, you can ignore it.");
+        }
+    }
+
+    void loadConfiguration() {
+        try {
+            jewelToSmelt = JewelToSmelt.values()[Integer.parseInt(configuration.getProperty("jewelToSmelt"))];
+        } catch (Exception e) {
+            println("Error loading configuration");
+            println("This is a non-fatal error, you can ignore it.");
+        }
     }
 
     public BotState getBotState() {

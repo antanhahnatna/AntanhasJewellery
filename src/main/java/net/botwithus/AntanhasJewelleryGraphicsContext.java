@@ -31,6 +31,7 @@ public class AntanhasJewelleryGraphicsContext extends ScriptGraphicsContext {
                         script.logAmounts = new LinkedList<>();
                         script.experienceGained = 0;
                         script.startingTime = System.currentTimeMillis();
+                        script.saveConfiguration();
                     }
                     ImGui.EndDisabled();
                     ImGui.SameLine();
