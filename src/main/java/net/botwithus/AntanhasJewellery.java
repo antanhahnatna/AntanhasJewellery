@@ -106,7 +106,12 @@ public class AntanhasJewellery extends LoopingScript {
         HYDRIXAMULET("Gold bar", "Hydrix amulet", 3, 63),
         ALCHEMICALONYXRING("Gold bar", "Alchemical onyx ring", 3, 65),
         ALCHEMICALONYXNECKLACE("Gold bar", "Alchemical onyx necklace", 3, 67),
-        RINGOSLAYING("Gold bar", "Ring of slaying (8)", 3, 69);
+        RINGOSLAYING("Gold bar", "Ring of slaying (8)", 3, 69),
+        PLATINUMRING("Platinum bar", "Platinum ring", 5, 1),
+        PLATINUMNECKLACE("Platinum bar", "Platinum necklace", 5, 3),
+        PLATINUMBRACELET("Platinum bar", "Platinum bracelet", 5, 5),
+        PLATINUMAMULET("Platinum bar", "Platinum amulet", 5, 7),
+        PLATINUMANKLET("Platinum bar", "Platinum anklet", 5, 9);
         //...
 
         private final String barName;
